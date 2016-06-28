@@ -26,7 +26,7 @@ public class TestUDPSocket {
 
         serverThread = new Thread(){
             public void run(){
-                UDPServer server = new UDPServer(2000);
+                UdpSocket server = new UdpSocket(2000);
                 Assert.assertNotNull(server);
                 server.start();
             }
@@ -34,7 +34,7 @@ public class TestUDPSocket {
 
         clientThread = new Thread(){
             public void run(){
-                UDPServer client = new UDPServer(2020);
+                UdpSocket client = new UdpSocket(2020);
                 Assert.assertNotNull(client);
                 client.send("abc", "127.0.0.1", 2000);
                 client.start();

@@ -8,9 +8,9 @@ import java.net.*;
 /**
  * Created by Administrator on 16-6-25.
  */
-public class UDPServer {
+public class UdpSocket {
 
-    private static final Logger logger = Logger.getLogger(UDPServer.class);
+    private static final Logger logger = Logger.getLogger(UdpSocket.class);
 
     private byte[] buffer = new byte[1024];
 
@@ -22,7 +22,7 @@ public class UDPServer {
 
     private boolean isStopRequested = false;
 
-    public UDPServer(int port){
+    public UdpSocket(int port){
         this.port = port;
 
         try{
