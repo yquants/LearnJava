@@ -131,7 +131,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
                 pointRuleEngine.initEngine();
                 System.out.println("初始化规则引擎结束.");
 
-                System.out.println("用户"+pointDomain.getUserName()+"执行规则引擎前的积分："+pointDomain.getPoint());
+                System.out.println("用户" + pointDomain.getUserName() + "执行规则引擎前的积分：" + pointDomain.getPoint());
 
                 pointRuleEngine.executeRuleEngine(pointDomain);
                 System.out.println("执行完毕BillThisMonth：" + pointDomain.getBillThisMonth());
@@ -142,7 +142,7 @@ public class PointRuleEngineImpl implements PointRuleEngine {
                 System.out.println("刷新规则文件...");
                 pointRuleEngine.refreshEngineRule();
                 System.out.println("刷新规则文件结束.");
-            } else if ("q".equalsIgnoreCase(input) ){
+            } else if ("q".equalsIgnoreCase(input)) {
                 System.out.println("退出...");
                 return;
             }

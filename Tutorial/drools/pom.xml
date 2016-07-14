@@ -11,19 +11,30 @@
 
     <artifactId>tutorial-drools</artifactId>
 
-    <dependencies>
+    <properties>
+            <drools-version>5.2.0.Final</drools-version>
+    </properties>
 
+    <dependencies>
     <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-core</artifactId>
-        <version>5.2.0.M2</version>
+        <version>${drools-version}</version>
     </dependency>
 
     <dependency>
         <groupId>org.drools</groupId>
         <artifactId>drools-compiler</artifactId>
-        <version>5.2.0.M2</version>
+        <version>${drools-version}</version>
     </dependency>
+
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-spring</artifactId>
+            <version>${drools-version}</version>
+        </dependency>
+
+
     </dependencies>
 
 
